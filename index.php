@@ -10,14 +10,14 @@
             <a href=""><button>Comprar</button></a>
         </section>
     </section>
-    <section class="center">
+    <section id="main" class="center">
         <article id="repertorio-index">
             <h1>O Repertório que você encontra o remédio!</h1>
             <ul>
                 <li>Absolutamente tudo numa única tela.</li>
-                <l1>Fácil visualização e funcionalidades muito acessíveis.</l1>
-                <l1>Comandos simplificados.</l1>
-                <l1>Exibição de tela com visualização de capítulos, rubricas, medicamentos, pesquisa de palavras e apresentação da repertorização em tela de entrada!</l1>
+                <li>Fácil visualização e funcionalidades muito acessíveis.</li>
+                <li>Comandos simplificados.</li>
+                <li>Exibição de tela com visualização de capítulos, rubricas, medicamentos, pesquisa de palavras e apresentação da repertorização em tela de entrada!</li>
             </ul>
         </article>
         <article id="biblioteca-index">
@@ -30,10 +30,10 @@
             </ul>
         </article>
         <section id="baixar-pdf">
-            <h2>Lorem Ipsun cacilds vids litro abertis. Cacilds vids litro abertis</h2>
+            <h2>Baixe o PDF e veja as especificações da nova versão</h2>
             <a href=""><button>Baixar PDF</button></a>
         </section>
     </section>
-        
+
 <?php include_once("footer.php");?>
 
