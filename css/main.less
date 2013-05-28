@@ -1,0 +1,161 @@
+/*
+Theme Name: Homeo-Soft
+Theme URI: http://homeosoft.com.br/
+Description: Este tema foi desenvolvido exclusivamente para o Site homeosoft.com.br/
+Version: 1.0
+Author: Marcelo Azevedo / Daniel Telles
+Author URL: http://www.ligatecnologia.com.br
+Tags: Site institucional, Software, Moderno
+*/
+
+
+/*RESET
+==============================================================*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:101.1%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+option:checked{background: none}
+a{text-decoration: none}
+*{color: #1A1A1A; font-family: 'Noto Sans', sans-serif;}
+
+/*Importados
+==============================================================*/
+@import 'grid.less';
+
+/*Variaveis e Funções
+==============================================================*/
+
+@column-width: 241;
+@gutter-width: 20;
+@columns: 4;
+
+.center(){	
+	margin: 0 auto;
+	display: block;
+	float: none;
+	.clearfix;
+
+}
+
+.radius(@radio: 15px){
+	 -webkit-border-radius: @radio;
+	border-radius: @radio; 
+}
+
+.grad(){
+	background: rgb(168,206,173);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYThjZWFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzElIiBzdG9wLWNvbG9yPSIjYjNlMGJlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk0ZDZiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(45deg,  rgba(168,206,173,1) 0%, rgba(179,224,190,1) 31%, rgba(148,214,186,1) 100%); 
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(168,206,173,1)), color-stop(31%,rgba(179,224,190,1)), color-stop(100%,rgba(148,214,186,1))); 
+	background: -webkit-linear-gradient(45deg,  rgba(168,206,173,1) 0%,rgba(179,224,190,1) 31%,rgba(148,214,186,1) 100%); 
+	background: -o-linear-gradient(45deg,  rgba(168,206,173,1) 0%,rgba(179,224,190,1) 31%,rgba(148,214,186,1) 100%); 
+	background: -ms-linear-gradient(45deg,  rgba(168,206,173,1) 0%,rgba(179,224,190,1) 31%,rgba(148,214,186,1) 100%); 
+	background: linear-gradient(45deg,  rgba(168,206,173,1) 0%,rgba(179,224,190,1) 31%,rgba(148,214,186,1) 100%); 
+}
+
+.button(){
+	width: 120px;
+	height: 33px;
+	.radius;
+	border: none;
+	.grad;
+	color: white;
+	text-shadow: 1px -2px 1px #81a48c;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer
+}
+
+/*Inicil
+==============================================================*/
+
+.center{
+	.column(4);
+	.center();
+}
+
+header{
+	.column(4);
+	.center();
+
+	h1{
+		background: url('../img/icon.png') no-repeat 0 0; 
+		width: 106px; 
+		height: 56px;
+		margin: 10px 0 30px 0;
+
+		span{
+			display: none;
+		}
+	}
+
+	nav{
+		ul{
+			li{
+				float: left;
+				margin-bottom: 15px;
+				a{
+					padding-right: 13px;
+					margin-right: 35px;
+					background: url(../img/bg/seta-menu.png) no-repeat center right;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+section#banner{
+	.column(4);
+	.center();
+	height: 345px;
+}
+
+section#intro{
+	height: 210px;
+	background-color: #F7F7F7;
+	padding-top: 45px;
+
+	h1{
+		font-size: 42px;
+		color: #798585;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	h2{
+		font-size: 25px;
+		color: #B8CACA;
+		line-height: 29px;
+	}
+
+	button{
+		.button;
+		margin: 20px 42%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

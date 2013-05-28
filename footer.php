@@ -1,6 +1,8 @@
         <footer id="footer">
-            <p>Copyright, Homeosoft. Todos os direitos reservados</p>
-            <p><span>Desenvolvido por <a href="">Seliganaweb.com</a></span></p>
+            <div class="center">
+                <p>Copyright, Homeosoft. Todos os direitos reservados</p>
+                <p><span>Desenvolvido por <a href="">Seliganaweb.com</a></span></p>
+            </div>
         </footer>        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -16,4 +18,5 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>
