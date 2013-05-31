@@ -7,6 +7,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.cycle.all.js" type="text/javascript"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -18,5 +19,7 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </html>

@@ -25,10 +25,10 @@
             <h1><span>Homeo Soft</span></h1>
             <nav id="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Apresentação e Conteúdo</a></li>
-                    <li><a href="">Ajuda / Suporte</a></li>
-                    <li><a href="">Contatos</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="suporte.php">Apresentação e Conteúdo</a></li>
+                    <li><a href="suporte.php">Ajuda / Suporte</a></li>
+                    <li><a href="contato.php">Contatos</a></li>
                 </ul>
             </nav>
         </header>

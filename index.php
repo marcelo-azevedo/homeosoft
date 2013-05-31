@@ -1,7 +1,9 @@
 <?php include_once("header.php");?>
 
     <section id="banner">
-        <img src="img/banner/slide1" alt="Slide 1">
+        <article id="slide1"></article>
+        <article id="slide2"></article>
+        <article id="slide3"></article>
     </section>
     <section id="intro">
         <section class="center">

@@ -170,33 +170,29 @@ header nav ul li a {
   margin-right: 35px;
   background: url(../img/bg/seta-menu.png) no-repeat center right;
   font-size: 16px;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+header nav ul li a:hover {
+  color: #66a6cf;
+  background-position: bottom right;
 }
 section#banner {
-  display: inline;
-  float: left;
-  width: 1024px;
-  margin: 0 10px;
-  margin: 0 auto;
-  display: block;
-  float: none;
-  *zoom: 1;
   height: 345px;
 }
-section#banner:before,
-section#banner:after {
-  content: "";
-  display: table;
+section#banner article {
+  height: 345px;
+  width: 100%;
 }
-section#banner:after {
-  clear: both;
+section#banner article#slide1 {
+  background: url(../img/banner/slide1.jpg) no-repeat center;
 }
-section#banner:before,
-section#banner:after {
-  content: "";
-  display: table;
+section#banner article#slide2 {
+  background: url(../img/banner/slide2.jpg) no-repeat center;
 }
-section#banner:after {
-  clear: both;
+section#banner article#slide3 {
+  background: url(../img/banner/slide3.jpg) no-repeat center;
 }
 section#intro {
   height: 210px;
@@ -221,19 +217,25 @@ section#intro button {
   border-radius: 15px;
   border: none;
   background: #a8cead;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYThjZWFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzElIiBzdG9wLWNvbG9yPSIjYjNlMGJlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk0ZDZiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #a8cead), color-stop(31%, #b3e0be), color-stop(100%, #94d6ba));
-  background: -webkit-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -o-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -ms-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
   color: white;
   text-shadow: 1px -2px 1px #81a48c;
+  -moz-text-shadow: 1px -2px 1px #81a48c;
+  -webkit-text-shadow: 1px -2px 1px #81a48c;
+  -o-text-shadow: 1px -2px 1px #81a48c;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   margin: 20px 42%;
+}
+section#intro button:hover {
+  background: #E5E588;
+  text-shadow: -2px -2px 1px #81a48c;
+  -moz-text-shadow: -2px -2px 1px #81a48c;
+  -webkit-text-shadow: -2px -2px 1px #81a48c;
+  -o-text-shadow: -2px -2px 1px #81a48c;
 }
 section#main article {
   display: inline;
@@ -270,7 +272,7 @@ section#main article ul li {
   padding-left: 14px;
   background: url(../img/bg/seta-link.png) no-repeat 0 6px;
   color: #757575;
-  text-align: justify;
+  text-align: left;
   font-size: 12px;
   margin: 5px 0;
 }
@@ -281,7 +283,7 @@ section#main section#baixar-pdf {
   float: left;
   -webkit-border-radius: 15px;
   border-radius: 15px;
-  margin: 45px 150px;
+  margin: 45px 150px 15px 150px;
   -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   padding: 0 55px;
@@ -300,26 +302,33 @@ section#main section#baixar-pdf button {
   border-radius: 15px;
   border: none;
   background: #a8cead;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYThjZWFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzElIiBzdG9wLWNvbG9yPSIjYjNlMGJlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk0ZDZiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #a8cead), color-stop(31%, #b3e0be), color-stop(100%, #94d6ba));
-  background: -webkit-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -o-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: -ms-linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
-  background: linear-gradient(45deg, #a8cead 0%, #b3e0be 31%, #94d6ba 100%);
   color: white;
   text-shadow: 1px -2px 1px #81a48c;
+  -moz-text-shadow: 1px -2px 1px #81a48c;
+  -webkit-text-shadow: 1px -2px 1px #81a48c;
+  -o-text-shadow: 1px -2px 1px #81a48c;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   float: right;
   margin-top: 20px;
 }
+section#main section#baixar-pdf button:hover {
+  background: #E5E588;
+  text-shadow: -2px -2px 1px #81a48c;
+  -moz-text-shadow: -2px -2px 1px #81a48c;
+  -webkit-text-shadow: -2px -2px 1px #81a48c;
+  -o-text-shadow: -2px -2px 1px #81a48c;
+}
 footer#footer {
-  background-color: #66A6CF;
+  background-color: #66a6cf;
   color: white;
   text-align: center;
   padding: 20px 0;
+  margin-top: 30px;
 }
 footer#footer p {
   color: white;
@@ -332,4 +341,204 @@ footer#footer p span {
 footer#footer p span a {
   color: white;
   font-weight: bold;
+}
+section #breadcrumb {
+  display: inline;
+  float: left;
+  width: 1024px;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+section #breadcrumb ul li {
+  float: left;
+  margin: 7px 0;
+  font-size: 12px;
+  color: #798585;
+}
+section #breadcrumb ul li a {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #798585;
+  color: #66a6cf;
+  height: 12px;
+}
+section#suporte article {
+  display: inline;
+  float: left;
+  width: 502px;
+  margin: 0 10px;
+  margin: 0;
+  height: 150px;
+}
+section#suporte article button {
+  float: left;
+  width: 102px;
+  height: 102px;
+  border: none;
+  margin-right: 30px;
+  background: #66a6cf url('../img/icon.png') no-repeat;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+}
+section#suporte article button#icon-video {
+  background-position: -110px 25px;
+  /*23*/
+
+}
+section#suporte article button#icon-salvar {
+  background-position: -212px 25px;
+}
+section#suporte article button#icon-suporte {
+  background-position: -306px 15px;
+}
+section#suporte article h1 {
+  width: 310px;
+  margin: 10px 0;
+  color: #798585;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+section#suporte article p {
+  width: 310px;
+  color: #757575;
+  font-size: 12px;
+  float: left;
+  text-decoration: none;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+}
+section#suporte article:hover button {
+  background-color: #A8CEAD;
+}
+section#suporte article:hover h1 {
+  color: #A8CEAD;
+}
+section#suporte article:hover p {
+  text-decoration: underline;
+}
+section#contato article#formulario {
+  display: inline;
+  float: left;
+  width: 502px;
+  margin: 0 10px;
+  margin: 0;
+  margin-left: 271px;
+}
+section#contato article#formulario label input {
+  width: 405px;
+  height: 33px;
+  padding: 0 10px 0 45px;
+  margin-bottom: 12px;
+  border: 1px solid #D2D3D2;
+  background: #f3f6f5 url('../img/icon.png') no-repeat -4px -194px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+section#contato article#formulario label input#nome {
+  background-position: 11px -187px;
+}
+section#contato article#formulario label input#email {
+  background-position: 10px -234px;
+}
+section#contato article#formulario label input#telefone {
+  background-position: 7px -278px;
+}
+section#contato article#formulario label textarea {
+  width: 405px;
+  height: 33px;
+  padding: 0 10px 0 45px;
+  margin-bottom: 12px;
+  border: 1px solid #D2D3D2;
+  background: #f3f6f5 url('../img/icon.png') no-repeat -4px -194px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  height: 246px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+section#contato article#formulario label textarea#mensagem {
+  background-position: 11px -325px;
+}
+section#contato article#formulario input[type="submit"] {
+  width: 120px;
+  height: 33px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: none;
+  background: #a8cead;
+  color: white;
+  text-shadow: 1px -2px 1px #81a48c;
+  -moz-text-shadow: 1px -2px 1px #81a48c;
+  -webkit-text-shadow: 1px -2px 1px #81a48c;
+  -o-text-shadow: 1px -2px 1px #81a48c;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  float: right;
+  margin-right: 40px;
+}
+section#contato article#formulario input[type="submit"]:hover {
+  background: #E5E588;
+  text-shadow: -2px -2px 1px #81a48c;
+  -moz-text-shadow: -2px -2px 1px #81a48c;
+  -webkit-text-shadow: -2px -2px 1px #81a48c;
+  -o-text-shadow: -2px -2px 1px #81a48c;
+}
+section#contato aside#descricao-contato {
+  display: inline;
+  float: left;
+  width: 241px;
+  margin: 0 10px;
+  margin: 0;
+}
+section#contato aside#descricao-contato h1 {
+  color: #798585;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+}
+section#contato aside#descricao-contato p {
+  color: #757575;
+  font-size: 12px;
+  float: left;
+  text-decoration: none;
+  margin: 30px 0;
+  line-height: 20px;
+}
+section#contato aside#descricao-contato ul {
+  float: left;
+}
+section#contato aside#descricao-contato ul li {
+  color: #757575;
+  font-size: 15px;
+  float: left;
+  text-decoration: none;
+  padding: 10px 0;
+  padding-left: 35px;
+  float: none;
+  background: url('../img/icon.png') no-repeat;
+}
+section#contato aside#descricao-contato ul li#numero-telefone {
+  background-position: -2px -65px;
+}
+section#contato aside#descricao-contato ul li#skype {
+  background-position: -4px -105px;
+}
+section#contato aside#descricao-contato ul li#endereco-email {
+  background-position: -4px -145px;
 }
